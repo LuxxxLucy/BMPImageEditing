@@ -1,3 +1,6 @@
+/*
+ * this should shows the basic processing of bmp
+ */
 
 #include "BMPcontainer.cpp"
 #include <cstdlib>

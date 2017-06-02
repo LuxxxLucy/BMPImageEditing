@@ -14,8 +14,7 @@
 int main()
 {
     printf("hello this is the test programme for library of image process by lucy\n");
-	printf("assignment 03");
-// 声明简单的变量
+    // 声明简单的变量
 	//auto image = BMPcontainer("test_image/threhold_test.bmp");
 	auto image = BMPcontainer("test_image/lena512color.bmp");
 

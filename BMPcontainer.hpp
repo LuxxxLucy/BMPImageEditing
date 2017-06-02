@@ -1004,10 +1004,8 @@ void BMPcontainer::make_laplacian_enhancement(double ratio)
 
 void BMPcontainer::resum_with_weight(std::vector<CPixel> new_pixels,double ratio)
 {
-
 	std::vector<CPixel>& old_pixels=this->cpixels;
 	std::vector<CPixel> pixels;
-
 	for(int i=0;i<this->infoHeader.biWidth;i++)
 	{
 		for (int j=0;j<this->infoHeader.biHeight;j++)
@@ -1020,7 +1018,6 @@ void BMPcontainer::resum_with_weight(std::vector<CPixel> new_pixels,double ratio
 			pixels.push_back(temp_pix);
 		}
 	}
-
 }
 
 std::vector<CPixel> BMPcontainer::laplacian_result(int x_window_size,int y_window_size)
@@ -1048,7 +1045,7 @@ std::vector<CPixel> BMPcontainer::laplacian_result(int x_window_size,int y_windo
 					count+=1;
 				}
 
-			// normal the pixel value
+			// normalize the pixel value
 			int this_index=i*this->infoHeader.biWidth+j;
 			r=old_pixels[this_index].rgbRed-(r-count*old_pixels[this_index].rgbRed);
 			g=old_pixels[this_index].rgbGreen-(g-count*old_pixels[this_index].rgbGreen);
@@ -1122,7 +1119,6 @@ void BMPcontainer::make_bilateral_filter(float space_radius,float intensity_radi
 
 					space_diff_2.clear();
 					color_diff_2.clear();
-
 				}
 			}
 
