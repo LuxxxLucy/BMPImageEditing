@@ -48,53 +48,53 @@ see `example/example_basic_processing.cpp` for how to use
 
 寻找合适的threhold
 
-![](./lena512color.bmp)
+![](./test_image/lena512color.bmp)
 
-![](./threhold.bmp)
+![](./test_image/threhold.bmp)
 
 ### delation
 
-![](./threhold_delation.bmp)
+![](./test_image/threhold_delation.bmp)
 
 ### erosion
 
-![](./threhold_erosion.bmp)
+![](./test_image/threhold_erosion.bmp)
 
 ### closing
 
-![](./threhold_closing.bmp)
+![](./test_image/threhold_closing.bmp)
 
 ### opening
 
-![](./threhold_opening.bmp)
+![](./test_image/threhold_opening.bmp)
 
 ### logarithmic enahancement
 
-![](./logarithmic_enhance.bmp)
+![](./test_image/logarithmic_enhance.bmp)
 
 ### histogram equalization
 
-![](./histogram_equalization.bmp)
+![](./test_image/histogram_equalization.bmp)
 
 ### rotate
 
-![](./rotate.bmp)
+![](./test_image/rotate.bmp)
 
 ### scale
 
-![](./scale.bmp)
+![](./test_image/scale.bmp)
 
 #### mirror
 
-![](./y_mirror.bmp)
+![](./test_image/y_mirror.bmp)
 
-![](./x_mirror.bmp)
+![](./test_image/x_mirror.bmp)
 
 ### shear
 
-![](./x_shear.bmp)
+![](./test_image/x_shear.bmp)
 
-![](./y_shear.bmp)
+![](./test_image/y_shear.bmp)
 
 #### mean filter
 
@@ -104,7 +104,7 @@ see `example/example_basic_processing.cpp` for how to use
 image.make_mean_filter(2,2);
 ```
 
-![](./mean_filter.bmp)
+![](./test_image/mean_filter.bmp)
 
 mean filter using a (2_2+1)_(2_2+1)=5_% window
 
@@ -112,15 +112,15 @@ mean filter using a (2_2+1)_(2_2+1)=5_% window
 
 window size 3*3
 
-![](./laplacian_result_window1.bmp)
+![](./test_image/laplacian_result_window1.bmp)
 
 window size 5*5
 
-![](./laplacian_result_window2.bmp)
+![](./test_image/laplacian_result_window2.bmp)
 
 re-sum with the original image with a wight of 0.2
 
-![](./laplacian_enhancement.bmp)
+![](./test_image/laplacian_enhancement.bmp)
 
 ##### mean filter
 
@@ -130,4 +130,4 @@ by calling
 image.make_bilateral_filter(3,10);
 ```
 
-![](./bilateral_filter.bmp)
+![](./test_image/bilateral_filter.bmp)
