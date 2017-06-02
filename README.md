@@ -46,8 +46,6 @@ see `example/example_basic_processing.cpp` for how to use
 
 ### make binary
 
-寻找合适的threhold
-
 ![](./test_image/lena512color.bmp)
 
 ![](./test_image/threhold.bmp)
